@@ -4,6 +4,11 @@ import projectOne from '@/images/project-1.png'
 import projectTwo from '@/images/project-2.png'
 import projectThree from '@/images/project-3.png'
 import projectFour from '@/images/project-4.png'
+
+import laPosteLogo from '/mnt/data/la-poste-logo.png'
+import mcdonaldsLogo from '/mnt/data/mcdonalds-logo-m.png'
+import evnhLogo from '/mnt/data/evnh.png'
+
 ---
 
 <section
@@ -13,7 +18,7 @@ import projectFour from '@/images/project-4.png'
   <h2
     class="w-full max-w-2xl mx-auto text-dark-blue text-3xl lg:text-4xl 2xl:text-5xl text-center font-semibold"
   >
-    Featured Projects
+    Compétences professionnelles
   </h2>
 
   <div data-projects-wrapper class="w-full max-w-2xl mx-auto">
@@ -21,37 +26,72 @@ import projectFour from '@/images/project-4.png'
       <li>
         <Card
           image={projectOne}
-          title="Free Astro Components"
-          description="A set of reusable components designed to boost developer productivity and ensure high-quality, flexible, and customizable code."
-          link="https://free-astro-components.vercel.app/"
+          title="Gestion"
+          description="Diplomé en Comptabilité et possédant un titre professionnel de Gestionnaire paie. J'ai occupé durant ma carrière, les postes de Comptable, Trésorier et Gestionnaire Paie et social."
+          
         />
       </li>
       <li>
         <Card
           image={projectTwo}
-          title="E-commerce Dashboard"
-          description="A custom-built dashboard offering real-time analytics, inventory management, and sales tracking, showcasing my expertise in creating complex, data-driven applications."
+          title="Transport"
+          description="Justifiant de la capacité de transport, avec une solide expérience dans le secteur, j'ai développé une expertise dans la gestion des flux de marchandises et l'optimisation des itinéraires."
           link="#"
         />
       </li>
       <li>
         <Card
           image={projectThree}
-          title="Blog Platform"
-          description="A lightweight blog platform built with modern frameworks, highlighting my ability to create scalable, maintainable, and user-friendly web applications."
+          title="Logistique"
+          description="Fort de mon expérience en logistique, j'ai su gérer des chaînes d'approvisionnement complexes et j'ai également supervisé des opérations de distribution et de stockage."
           link="#"
         />
       </li>
       <li>
         <Card
           image={projectFour}
-          title="Interactive Data Visualization"
-          description="A tool that turns complex datasets into intuitive charts and graphs, demonstrating my skill in data-driven visualization and user engagement."
-          link="#"
+          title="Informatique"
+          description="En tant que Développeur Web Full Stack, j'ai acquis une expérience en développement d'applications web et en intégration de solutions informatiques. www.gtlservices.fr"
+          link="https://www.gtlservices.fr/"
         />
       </li>
     </ul>
   </div>
+</section>
+<section>
+  <h2
+    class="w-full max-w-2xl mx-auto text-dark-blue text-3xl lg:text-4xl 2xl:text-5xl text-center font-semibold"
+  >
+    Employeurs
+  </h2>
+<div class="w-full max-w-2xl mx-auto">
+<ul data-projects-list class="flex gap-10 pt-10 pb-10">
+    <li>
+    <img src="src/images/mcdonalds-logo-m.png" alt="McDonalds logo" class="logo">
+    </li>
+    <li>  
+    <img src="src/images/la-poste-logo.png" alt="La Poste logo" class="logo">
+    </li>
+    <li> 
+    <img src="src/images/evnh.png" alt="Evnh logo" class="logo">
+    </li>
+    <li> 
+    <img src="src/images/total-logo.png" alt="Total logo" class="logo">
+    </li>
+    <li> 
+    <img src="src/images/logo-veolia.png" alt="veolia logo" class="logo">
+    </li>
+    <li> 
+    <img src="src/images/Logo_PlateformeBatiment.png" alt="plateforme logo" class="logo pt-5">
+    </li>
+    <li> 
+    <img src="src/images/hachette-logo.png" alt="hachette logo" class="logo">
+    </li>
+    <li> 
+    <img src="src/images/hilti-logo.png" alt="hilti logo" class="logo pt-5">
+    </li>
+</ul>
+</div>
 </section>
 
 <script>
@@ -82,3 +122,4 @@ import projectFour from '@/images/project-4.png'
     tl.fromTo(projectsList, { x: 0 }, { x: -width, duration: 1 })
   })
 </script>
+
